@@ -1,0 +1,109 @@
+.counter {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+}
+.TodoSearch {
+  background: #f9fbfc;
+  border-radius: 2px;
+  border: 2px solid #202329;
+  margin: 0 24px;
+  height: 64px;
+  width: calc(100% - 150px);
+  max-width: 1300px;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #1e1e1f;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+}
+.TodoSearch::placeholder {
+  color: #a5a5a5;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.TodoSearch:focus {
+  outline-color: #61dafa;
+}
+.TodoList {
+    width: calc(100% - 50px);
+    max-width: 1450px;
+    margin: 0;
+    padding: 0 0 56px 0;
+    list-style: none;
+}
+.TodoItem {
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding: 0 12px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+}
+.TodoItem-p, .editTaskText {
+  margin: 24px;
+  width: calc(100% - 100px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+}
+.TodoItem-p:hover{
+    cursor: pointer;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+.TodoItem--notFound {
+  display: none;
+}
+.Icon {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.Icon-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: pink;
+}
+.Icon-delete:hover {
+    background-color: red;
+    color: white;
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.CreateTodoButton {
+  background-color: #61dafa;
+  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 50px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-weight: bold;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+
+  transform: rotate(0);
+  transition: 0.3s ease;
+}
+.CreateTodoButton:hover {
+  transform: rotate(270deg);
+}
